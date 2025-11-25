@@ -1,0 +1,227 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Enthalion | School Science Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-mark">E</span>
+      <div class="logo-text">
+        <h1>ENTHALION</h1>
+        <p>School Science Club</p>
+      </div>
+    </div>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#domains">Domains</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#join">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h2>Where Curiosity Meets Experiment</h2>
+        <p>
+          Enthalion is the science club of our school – a space to experiment,
+          debate, build, and break things (safely) in the name of curiosity.
+        </p>
+        <div class="hero-actions">
+          <a href="#join" class="btn primary">Join the Club</a>
+          <a href="#events" class="btn ghost">View Events</a>
+        </div>
+        <div class="hero-tags">
+          <span>Physics</span>
+          <span>Chemistry</span>
+          <span>Biology</span>
+          <span>Tech</span>
+        </div>
+      </div>
+      <div class="hero-orbit">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="orbit orbit-3"></div>
+        <div class="orbit-center"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <h2>About Enthalion</h2>
+        <p>What the club actually does.</p>
+      </div>
+      <div class="about-grid">
+        <article class="card">
+          <h3>Our Vision</h3>
+          <p>
+            Turn textbook science into real experiments, projects, and
+            competitions. We learn by building, not just memorising.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Who Can Join</h3>
+          <p>
+            Open to all classes and streams. No minimum marks, only
+            requirement: curiosity and willingness to show up.
+          </p>
+        </article>
+        <article class="card">
+          <h3>What We Do</h3>
+          <ul>
+            <li>Hands-on experiments and demos</li>
+            <li>Interschool Olympiads and quizzes</li>
+            <li>Project building and exhibitions</li>
+            <li>Talks by teachers and alumni</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- DOMAINS -->
+    <section id="domains" class="section section-alt">
+      <div class="section-header">
+        <h2>Domains of Science</h2>
+        <p>Pick your obsession. Or three.</p>
+      </div>
+      <div class="domains-grid">
+        <article class="pill-card">
+          <h3>Physics</h3>
+          <p>From circuits and optics to rockets and mechanics labs.</p>
+        </article>
+        <article class="pill-card">
+          <h3>Chemistry</h3>
+          <p>Reactions, titrations, colours, and controlled explosions.</p>
+        </article>
+        <article class="pill-card">
+          <h3>Biology</h3>
+          <p>Microscopes, dissections (where allowed), and biotech basics.</p>
+        </article>
+        <article class="pill-card">
+          <h3>Tech & Astronomy</h3>
+          <p>Robotics, simulations, sky-watch sessions, and more.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section id="events" class="section">
+      <div class="section-header">
+        <h2>Upcoming & Signature Events</h2>
+        <p>Sample list – change to your real school events.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Enthalion Launch Week</h3>
+            <p class="timeline-meta">Orientation + Lab Demo Day</p>
+            <p>
+              Intro session, safety briefing, and live demos across physics,
+              chemistry, and biology labs.
+            </p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Science Hack Evening</h3>
+            <p class="timeline-meta">Mini projects in 3 hours</p>
+            <p>
+              Teams build quick prototypes – from simple robots to chemical
+              clocks and model rockets.
+            </p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Astro Night</h3>
+            <p class="timeline-meta">Sky-watch + talks</p>
+            <p>
+              Telescope observations, basic astrophysics session, and night sky
+              photography experiments.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- JOIN FORM -->
+    <section id="join" class="section section-alt">
+      <div class="section-header">
+        <h2>Join Enthalion</h2>
+        <p>Simple interest form. Replace with your school’s real process.</p>
+      </div>
+      <div class="join-layout">
+        <form id="join-form" class="join-form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required />
+          </div>
+          <div class="field">
+            <label for="class">Class & Section</label>
+            <input id="class" name="class" type="text" placeholder="e.g. 10 B" required />
+          </div>
+          <div class="field">
+            <label for="interest">Main Area of Interest</label>
+            <select id="interest" name="interest">
+              <option value="">Choose one</option>
+              <option>Physics</option>
+              <option>Chemistry</option>
+              <option>Biology</option>
+              <option>Tech / Robotics</option>
+              <option>Astronomy</option>
+              <option>All of the above</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="reason">Why do you want to join?</label>
+            <textarea id="reason" name="reason" rows="3"
+              placeholder="One or two lines are enough."></textarea>
+          </div>
+          <button type="submit" class="btn primary full-width">Submit Interest</button>
+          <p id="form-message" class="form-message" aria-live="polite"></p>
+        </form>
+
+        <aside class="join-note card">
+          <h3>Club Details</h3>
+          <ul>
+            <li>Faculty In-Charge: [Ms. Ruchi Srivastava]</li>
+            <li>Student Head: [Vivaan Aggarwal, Piyush Joshi]</li>
+            <li>Meeting Day: [TBR]</li>
+            <li>Venue:TBR</li>
+          </ul>
+          <p class="note-small">
+            This form is only a demo. In real life, contact the teacher in-charge or
+            student council member for official registration.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>ENTHALION • School Science Club</p>
+    <p class="footer-sub">Designed as a sample website layout.</p>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
