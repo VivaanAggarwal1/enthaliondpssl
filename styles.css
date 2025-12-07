@@ -15,7 +15,7 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-/* ROOT FRAME (your Frame 3 = Frame 1 here) */
+/* ROOT FRAME (Frame 3 from Figma) */
 .frame-1 {
   position: relative;
   width: 1920px;
@@ -26,7 +26,9 @@ body {
   color: #fff;
 }
 
-/* Outline ellipses (border only) */
+/* ------------------------------------------- */
+/* OUTLINE ELLIPSES                            */
+/* ------------------------------------------- */
 
 .ellipse {
   box-sizing: border-box;
@@ -84,7 +86,29 @@ body {
   top: 154px;
 }
 
-/* Enthalion gradient bar */
+/* ------------------------------------------- */
+/* BEAKER SVG (Vector 1)                       */
+/* ------------------------------------------- */
+
+.beaker {
+  position: absolute;
+  width: 839.64px;
+  height: 859px;
+  left: 1311px;
+  top: 180.48px;
+  transform: matrix(-0.79, 0.61, 0.61, 0.79, 0, 0);
+  transform-origin: center;
+}
+
+.beaker svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ------------------------------------------- */
+/* ENTHALION BAR                               */
+/* ------------------------------------------- */
 
 .enthalion-bar {
   position: absolute;
@@ -107,12 +131,16 @@ body {
 .enthalion-text {
   font-family: "Satoshi Variable", system-ui, sans-serif;
   font-weight: 700;
-  font-size: 96px;
+  font-size: 160px; /* increased so it fills the bar */
   letter-spacing: 0.15em;
   text-transform: uppercase;
+  line-height: 1;
+  color: #ffffff;
 }
 
-/* Science Club text */
+/* ------------------------------------------- */
+/* SCIENCE CLUB                                */
+/* ------------------------------------------- */
 
 .science-club {
   position: absolute;
@@ -131,7 +159,9 @@ body {
   color: #ffffff;
 }
 
-/* Navigation pill frame (Frame 2147237997) */
+/* ------------------------------------------- */
+/* NAV BAR (Frame 2147237997)                  */
+/* ------------------------------------------- */
 
 .hero-nav {
   box-sizing: border-box;
@@ -150,8 +180,6 @@ body {
   justify-content: space-between;
   padding-inline: 22px;
 }
-
-/* Common nav text style from Figma (“about us”, “events”, “register”) */
 
 .hero-nav .nav-link {
   border: none;
@@ -172,7 +200,9 @@ body {
     0px 3.75068px 9.56423px rgba(0, 0, 0, 0.6);
 }
 
-/* Tagline “where curiosity reacts” (Group 1) */
+/* ------------------------------------------- */
+/* TAGLINE                                     */
+/* ------------------------------------------- */
 
 .tagline {
   position: absolute;
@@ -194,65 +224,9 @@ body {
   text-shadow: 0px 0px 45.295px rgba(255, 255, 255, 0.25);
 }
 
-/* Big rotated white vector block (Vector 1) */
-
-.vector-1 {
-  position: absolute;
-  width: 839.64px;
-  height: 859px;
-  left: 1311px;
-  top: 180.48px;
-
-  background: #ffffff;
-  box-shadow: 0px 0px 34.4152px rgba(255, 255, 255, 0.2);
-  border-radius: 52.1659px;
-  transform: matrix(-0.79, 0.61, 0.61, 0.79, 0, 0);
-}
-
-/* Colored orb ellipses 8, 9, 10 on top of vector */
-
-.orb {
-  position: absolute;
-  border-radius: 50%;
-}
-
-/* Ellipse 8 */
-.orb-8 {
-  width: 104.78px;
-  height: 104.78px;
-  left: 1580.22px;
-  top: 282.03px;
-
-  background: #b700ff;
-  box-shadow: 0px 0px 26.0898px rgba(183, 0, 255, 0.2);
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-}
-
-/* Ellipse 9 */
-.orb-9 {
-  width: 74.67px;
-  height: 74.67px;
-  left: 1487px;
-  top: 262px;
-
-  background: #9100ff;
-  box-shadow: 0px 0px 26.9474px rgba(144, 0, 255, 0.2);
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-}
-
-/* Ellipse 10 */
-.orb-10 {
-  width: 62.51px;
-  height: 62.51px;
-  left: 1517.82px;
-  top: 364.47px;
-
-  background: #dc9fff;
-  box-shadow: 0px 0px 26.9474px rgba(220, 159, 255, 0.2);
-  transform: matrix(-1, -0.01, -0.01, 1, 0, 0);
-}
-
-/* About paragraph block (two layers) */
+/* ------------------------------------------- */
+/* ABOUT PARAGRAPH (DOUBLE LAYER)              */
+/* ------------------------------------------- */
 
 .about-block {
   position: absolute;
@@ -262,7 +236,6 @@ body {
   top: 489px;
 }
 
-/* Base typography from Figma */
 .about-text {
   position: absolute;
   width: 100%;
@@ -277,7 +250,7 @@ body {
   letter-spacing: -0.03em;
 }
 
-/* Blurred purple glow layer (this is the second block in Figma) */
+/* Blurred purple glow (under layer) */
 .about-text-glow {
   color: #a97fff;
   text-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
@@ -285,7 +258,7 @@ body {
   z-index: 1;
 }
 
-/* Sharp white foreground text */
+/* Sharp white text (top layer) */
 .about-text-main {
   color: #ffffff;
   z-index: 2;
