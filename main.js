@@ -12,7 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     event.preventDefault();
     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-    // Close mobile nav on click (mobile only)
+    // Close mobile nav after clicking
     const nav = document.querySelector('.site-nav');
     if (nav && nav.classList.contains('open')) {
       nav.classList.remove('open');
@@ -20,7 +20,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Mobile navigation toggle
+// Mobile nav toggle
 const navToggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.site-nav');
 
