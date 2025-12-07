@@ -1,85 +1,230 @@
+<!-- index.html -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Enthalion — Frame 1</title>
+  <title>Enthalion | School Science Club</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- Gowun Batang for the paragraph -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <section class="frame frame-1">
-
-    <!-- Outline ellipses -->
-    <div class="ellipse ellipse-2"></div>
-    <div class="ellipse ellipse-11"></div>
-    <div class="ellipse ellipse-3"></div>
-    <div class="ellipse ellipse-5"></div>
-    <div class="ellipse ellipse-6"></div>
-    <div class="ellipse ellipse-7"></div>
-
-    <!-- Beaker SVG (rotated white shape) -->
-    <div class="beaker">
-      <svg viewBox="0 0 390 740" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g filter="url(#filter0_d_14_175)">
-          <path d="M178.901 45.3771L54.5945 141.878C31.8368 159.545 27.7099 192.316 45.377 215.073L225.582 447.204C385.528 653.237 166.533 1142.44 365.014 988.356L921.303 556.503C1095.74 421.082 571.988 466.661 432.302 286.725L252.097 54.5946C234.43 31.8369 201.659 27.71 178.901 45.3771Z" fill="white"/>
-        </g>
-        <defs>
-          <filter id="filter0_d_14_175" x="-0.000205994" y="3.8147e-05" width="990.899" height="1052.29" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-            <feOffset/>
-            <feGaussianBlur stdDeviation="17.2076"/>
-            <feComposite in2="hardAlpha" operator="out"/>
-            <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.2 0"/>
-            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_14_175"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_14_175" result="shape"/>
-          </filter>
-        </defs>
-      </svg>
+  <header class="site-header">
+    <div class="logo">
+      <span class="logo-mark">E</span>
+      <div class="logo-text">
+        <h1>ENTHALION</h1>
+        <p>“where curiosity reacts”</p>
+      </div>
     </div>
 
-    <!-- Gradient ENTHALION bar -->
-    <div class="enthalion-bar">
-      <span class="enthalion-text">ENTHALION</span>
-    </div>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+    </button>
 
-    <!-- Science Club text -->
-    <div class="science-club">Science Club</div>
-
-    <!-- Navigation pill -->
-    <nav class="hero-nav">
-      <button class="nav-link" data-scroll="#about">about us</button>
-      <button class="nav-link" data-scroll="#events">events</button>
-      <button class="nav-link" data-scroll="#register">register</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">Purpose</a></li>
+        <li><a href="#domains">Partners</a></li>
+        <li><a href="#events">C =atalist</a></li>
+        <li><a href="#join">Join</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <!-- “where curiosity reacts” -->
-    <div class="tagline">“where curiosity reacts”</div>
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <p class="hero-kicker">Science Club • Delhi Public School Sushant Lok</p>
+        <h2>Enthalion</h2>
+        <p class="hero-tagline">“where curiosity reacts”</p>
+        <p class="hero-lead">
+          Started by the students of Delhi Public School Sushant Lok, Enthalion is a paradox in motion — part lab,
+          part rebellion, entirely curiosity. It lives in the space between precision and impulse, between the formula
+          and the spark that ignores it. Structured enough to measure, reckless enough to matter. It’s not about
+          experiments; it’s about the people who can’t stop making them.
+        </p>
+        <div class="hero-actions">
+          <a href="#join" class="btn primary">Earn Your Place</a>
+          <a href="#events" class="btn ghost">Explore C =atalist</a>
+        </div>
+        <div class="hero-tags">
+          <span>live experiments</span>
+          <span>dangerous curiosity</span>
+          <span>reckless precision</span>
+        </div>
+      </div>
+      <div class="hero-orbit">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="orbit orbit-3"></div>
+        <div class="orbit-center"></div>
+      </div>
+    </section>
 
-    <!-- Big paragraph: glow + main text -->
-    <div class="about-block">
-      <p class="about-text about-text-glow">
-        Started by the students of Delhi Public School Sushant Lok, Enthalion is a paradox in motion — part lab,
-        part rebellion, entirely curiosity. It lives in the space between precision and impulse, between the formula
-        and the spark that ignores it. Structured enough to measure, reckless enough to matter. It’s not about experiments;
-        it’s about the people who can’t stop making them.
-      </p>
-      <p class="about-text about-text-main">
-        Started by the students of Delhi Public School Sushant Lok, Enthalion is a paradox in motion — part lab,
-        part rebellion, entirely curiosity. It lives in the space between precision and impulse, between the formula
-        and the spark that ignores it. Structured enough to measure, reckless enough to matter. It’s not about experiments;
-        it’s about the people who can’t stop making them.
-      </p>
-    </div>
+    <!-- OUR PURPOSE -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <h2>Our Purpose</h2>
+        <p>
+          Enthalion is where curiosity stops asking why and starts proving it wrong. We mix, burn, and break things
+          (safely) to uncover what textbooks only hint at — the real reactions, the real chaos, and the real science
+          that doesn’t wait for permission.
+        </p>
+      </div>
+      <div class="about-grid">
+        <article class="card">
+          <h3>What: Discover Science Beyond Textbooks</h3>
+          <p>
+            We design and perform live experiments that connect theory with reality—no rote learning, just raw
+            observation and logic.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Why: Science should be seen, not studied.</h3>
+          <p>
+            Enthalion makes curiosity dangerous and ideas inevitable. If it can be done on paper alone, it doesn’t
+            belong here.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Who We’re For</h3>
+          <p>
+            Structured enough to measure, reckless enough to matter. Enthalion is for the people who can’t stop
+            making things, even when nobody asked them to.
+          </p>
+        </article>
+      </div>
+    </section>
 
-  </section>
+    <!-- EVENT PARTNERS -->
+    <section id="domains" class="section section-alt">
+      <div class="section-header">
+        <h2>Event Partners</h2>
+        <p>Because the internet should be as bold as the experiments.</p>
+      </div>
+      <div class="domains-grid partners-grid">
+        <article class="pill-card partner-card">
+          <h3>.xyz</h3>
+          <p>
+            Our event partner backing domain names for ideas that refuse to wait. A web home for experiments,
+            projects, and reactions that outgrow the lab.
+          </p>
+        </article>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- C =ATALIST -->
+    <section id="events" class="section">
+      <div class="section-header">
+        <h2>C =atalist</h2>
+        <p>“Because the best reactions don’t happen in labs.”</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Flagship Event: C =atalist</h3>
+            <p class="timeline-meta">Where ideas collide and sparks fly</p>
+            <p>
+              Where ideas collide and sparks fly. It’s where formulas flirt with fire, logic meets chaos, and
+              curiosity refuses to stay theoretical. Watch science misbehave – beautifully, unpredictably, and exactly
+              the way it was meant to.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Live Experiments</h3>
+            <p class="timeline-meta">No textbook, no script</p>
+            <p>
+              Demos and setups that move fast, fail loudly, and teach more in ten seconds than a chapter of notes
+              ever will.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Aftermath & Brochure</h3>
+            <p class="timeline-meta">Documenting the chaos</p>
+            <p>
+              A brochure that captures the misbehaving science, the wild ideas that worked, the ones that didn’t, and
+              the people behind both.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- JOIN ENTHALION -->
+    <section id="join" class="section section-alt">
+      <div class="section-header">
+        <h2>Join Enthalion</h2>
+        <p>“Not Everyone Gets to React.”</p>
+      </div>
+      <div class="join-layout">
+        <form id="join-form" class="join-form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required />
+          </div>
+          <div class="field">
+            <label for="class">Class & Section</label>
+            <input id="class" name="class" type="text" placeholder="e.g. 10 B" required />
+          </div>
+          <div class="field">
+            <label for="interest">Main Area of Interest</label>
+            <select id="interest" name="interest">
+              <option value="">Choose one</option>
+              <option>Physics</option>
+              <option>Chemistry</option>
+              <option>Biology</option>
+              <option>Tech / Robotics</option>
+              <option>Astronomy</option>
+              <option>All of the above</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="reason">Why do you want to join?</label>
+            <textarea id="reason" name="reason" rows="3"
+              placeholder="One or two lines are enough."></textarea>
+          </div>
+          <button type="submit" class="btn primary full-width">Submit Interest</button>
+          <p id="form-message" class="form-message" aria-live="polite"></p>
+        </form>
+
+        <aside class="join-note card">
+          <h3>What You’re Signing Up For</h3>
+          <p>
+            ENTHALION isn’t open enrollment. It’s earned. It’s for those who think in sparks, not steps.
+          </p>
+          <p class="join-cta-line">EARN IT. LIVE IT.</p>
+          <ul>
+            <li>Faculty In-Charge: [Ms. Ruchi Srivastava]</li>
+            <li>Student Heads: [Vivaan Aggarwal, Piyush Joshi]</li>
+            <li>Meeting Day: [TBR]</li>
+            <li>Venue: [TBR]</li>
+          </ul>
+          <p class="note-small">
+            This form is a demo for the website. Actual selection and registration will be handled by the
+            teacher in-charge and student core team.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>ENTHALION • “where curiosity reacts”</p>
+    <p class="footer-sub">Designed as the digital home for the DPS Sushant Lok science club.</p>
+  </footer>
+
+  <script src="main.js" defer></script>
 </body>
 </html>
