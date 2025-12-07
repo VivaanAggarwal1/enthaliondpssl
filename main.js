@@ -1,12 +1,9 @@
-// Optional smooth scrolling for the nav pills.
-// If you don't have #about, #events, #register yet, nothing breaks.
+// Optional smooth scrolling if you later add sections with IDs.
 
 document.addEventListener("DOMContentLoaded", function () {
-  var links = document.querySelectorAll(".nav-link[data-scroll]");
-  links.forEach(function (btn) {
+  document.querySelectorAll(".nav-link[data-scroll]").forEach(function (btn) {
     btn.addEventListener("click", function () {
-      var targetSelector = btn.getAttribute("data-scroll");
-      var target = document.querySelector(targetSelector);
+      var target = document.querySelector(btn.getAttribute("data-scroll"));
       if (!target) return;
       target.scrollIntoView({ behavior: "smooth", block: "start" });
     });
